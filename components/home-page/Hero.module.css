@@ -1,0 +1,38 @@
+.hero {
+  min-height: calc(100vh - 106px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--primary-white-);
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: var(--primary-white-);
+}
+
+.hero .wrapper span {
+  z-index: -1;
+}
+
+.hero button {
+  background-color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+  color: var(--primary-white-);
+  font-weight: 500;
+}
+
+.hero svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-white-);
+}
+
+
+
+
+
