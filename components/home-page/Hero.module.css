@@ -1,5 +1,5 @@
 .hero {
-  min-height: calc(100vh - 106px);
+  min-height: calc(100vh - 73.7px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
@@ -31,8 +31,3 @@
   height: 1.25rem;
   color: var(--primary-white-);
 }
-
-
-
-
-

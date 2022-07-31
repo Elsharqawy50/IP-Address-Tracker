@@ -1,0 +1,25 @@
+.address {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.address .wrapper span {
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%), 0 1px 0 0 rgb(0 0 0 / 20%);
+}
+
+.address .wrapper img {
+  width: 100%;
+  height: 250px;
+}
+
+.address .header h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+}

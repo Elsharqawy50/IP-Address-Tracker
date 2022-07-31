@@ -1,0 +1,42 @@
+.form {
+  position: absolute;
+  top: 45%;
+  left: 50%; 
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.form input {
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  width: 450px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  background-color: var(--very-dark-gray-);
+  height: 41px;
+  width: 40px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+
+.form button span {
+z-index: 5;
+}
+
+.form button span img {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 768px) {
+  .form input {
+    width: calc(100% - 40px);
+  }
+}

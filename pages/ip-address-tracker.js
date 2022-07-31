@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import IpAddressLookup from "../components/ip-address-page/IpAddressLookup";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const IpAddressTracker = () => {
-  return (
-    <div>Ip Address Tracker</div>
-  )
-}
+  return <IpAddressLookup />;
+};
 
-export default IpAddressTracker
+export default IpAddressTracker;

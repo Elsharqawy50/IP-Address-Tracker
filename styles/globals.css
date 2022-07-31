@@ -27,7 +27,7 @@ a {
 }
 
 .navbar .navbarBrand img {
-  width: 80px;
+  width: 60px;
 }
 
 .navbar .nav a {
@@ -53,4 +53,10 @@ a {
 
 .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: calc(100vh - 330.7px);
+  z-index: 1;
 }
