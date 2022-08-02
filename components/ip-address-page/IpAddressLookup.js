@@ -3,7 +3,7 @@ import classes from "./IpAddressLookup.module.css";
 import Image from "next/image";
 import IpForm from "./IpForm";
 import dynamic from "next/dynamic";
-import Content from "./content";
+import Content from "./Content";
 import Container from "react-bootstrap/Container";
 import PopoverBottom from "../layout/PopoverBottom";
 
