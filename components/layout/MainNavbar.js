@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const MainNavbar = () => {
+  //use router to check the pathname on url to put class active to navbar-link
   const router = useRouter();
 
   return (
@@ -19,7 +21,7 @@ const MainNavbar = () => {
         <Container>
           <Link href="/" passHref>
             <Navbar.Brand className="navbarBrand">
-              <img src="/nav/logo.svg" alt="logo" />
+              <Image src="/nav/logo.svg" alt="logo" width={60} height={47.7} />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle

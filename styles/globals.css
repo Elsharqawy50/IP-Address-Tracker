@@ -18,6 +18,7 @@ a {
   --primary-white-: #fbfbff;
 }
 
+/* Navbar style */
 .navbar {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
@@ -55,8 +56,9 @@ a {
   box-shadow: none;
 }
 
+/* Map style */
 .leaflet-container {
   width: 100%;
-  height: calc(100vh - 330.7px);
+  height: calc(100vh - 339px);
   z-index: 1;
 }

@@ -1,7 +1,7 @@
 .form {
   position: absolute;
   top: 45%;
-  left: 50%; 
+  left: 50%;
   width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -27,7 +27,7 @@
 }
 
 .form button span {
-z-index: 5;
+  z-index: 5;
 }
 
 .form button span img {

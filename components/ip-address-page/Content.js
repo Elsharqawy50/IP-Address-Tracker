@@ -4,33 +4,36 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Content = () => {
+const Content = (props) => {
+  // destructuring data of location from ipAddressLookup to show on content section
+  const { ip, isp, timezone, region } = props.location;
+
   return (
     <div className={`${classes.content}`}>
       <Container className={`${classes.container} py-4`}>
         <Row className={classes.row}>
           <Col lg={3}>
-            <div className="ps-3 text-center text-lg-start">
+            <div className="ps-lg-3 text-center text-lg-start">
               <p>ip address</p>
-              <h3 className="mt-2">192.212.174.101</h3>
+              <h3 className="mt-2">{ip}</h3>
             </div>
           </Col>
           <Col lg={3}>
-            <div className={`${classes.item} ps-3`}>
+            <div className={`${classes.item} ps-lg-3`}>
               <p>location</p>
-              <h3 className="mt-2">brooklun,NY 10001</h3>
+              <h3 className="mt-2">{region}</h3>
             </div>
           </Col>
           <Col lg={3}>
-            <div className={`${classes.item} ps-3`}>
+            <div className={`${classes.item} ps-lg-3`}>
               <p>time zone</p>
-              <h3 className="mt-2">UTC-05:00</h3>
+              <h3 className="mt-2">UTC{timezone}</h3>
             </div>
           </Col>
           <Col lg={3}>
-            <div className={`${classes.item} ps-3`}>
+            <div className={`${classes.item} ps-lg-3`}>
               <p>isp</p>
-              <h3 className="mt-2">SpaceX starlink</h3>
+              <h3 className="mt-2">{isp}</h3>
             </div>
           </Col>
         </Row>

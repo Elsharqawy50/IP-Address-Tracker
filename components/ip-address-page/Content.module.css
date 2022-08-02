@@ -1,7 +1,7 @@
 .content {
   position: absolute;
   top: 33%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: 100;
@@ -19,12 +19,12 @@
 }
 
 .content p {
-color:var(--dark-gray-);
-margin-bottom: 0px;
+  color: var(--dark-gray-);
+  margin-bottom: 0px;
 }
 
 .content h3 {
-color:var(--very-dark-gray-);
+  color: var(--very-dark-gray-);
 }
 
 @media (max-width: 991px) {

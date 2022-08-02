@@ -1,21 +1,28 @@
 import React from "react";
-import { TileLayer, Marker, Popup,MapContainer } from "react-leaflet";
+import { TileLayer, Marker, Popup, MapContainer, useMap } from "react-leaflet";
 
-const Map = () => {
+// helper component to make map recenter on new location if user enter new ip address
+// pass lat and lng from new location data
+function ChangeMapView({ lat, lng }) {
+  const map = useMap();
+  map.setView([lat, lng], map.getZoom());
+
+  return null;
+}
+
+const Map = (props) => {
+  // destructuring data of location from ipAddressLookup to show on map
+  const { lat, lng, region } = props.location;
+
   return (
-    <MapContainer
-      center={[30.21035,  31.36812]}
-      zoom={13}
-      scrollWheelZoom={true}
-    >
+    <MapContainer center={[lat, lng]} zoom={15} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[ 30.21035,  31.36812]}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
+      <ChangeMapView lat={lat} lng={lng} />
+      <Marker position={[lat, lng]}>
+        <Popup>{region}</Popup>
       </Marker>
     </MapContainer>
   );
