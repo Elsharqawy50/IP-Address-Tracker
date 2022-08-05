@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import IpAddressLookup from "../components/ip-address-page/IpAddressLookup";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const IpAddressTracker = () => {
   return (
