@@ -1,6 +1,6 @@
 .content {
   position: absolute;
-  top: 33%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -30,7 +30,7 @@
 @media (max-width: 991px) {
   .content {
     width: calc(100% - 30px);
-    top: 44%;
+    top: 55%;
   }
   .content .item {
     border-left: none;
